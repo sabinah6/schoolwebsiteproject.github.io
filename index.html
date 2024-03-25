@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title>Thomas A. Edison CTE HS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://i.pinimg.com/originals/04/2a/ef/042aefaccd947a8c07f36b11f228ba2e.gif");
+      background-size: 100%;
+    }
+    header {
+      background-color: #ffabd4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #ffabd4;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav button {
+      color: white;
+      background-color: #ffc2d6;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #ff1c68;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #ff1c68;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thomas A. Edison CTE HS</h1>
+    <a href="https://popcode.org/?snapshot=00e710f6-c511-4e19-ac82-bf3e0289d6b9"> The Better Link to this Project </a>
+  </header>
+  <nav>
+    <button onclick="showSection('clubs')">Clubs/Organizations</button>
+    <button onclick="showSection('courses')">CTE Courses</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('alumni')">Alumni Faculty</button>
+  </nav>
+  <section id="clubs" style="display: none;">
+    <h2 class="font-effect-neon">Clubs/Organizations</h2>
+      <p> Some of the notable clubs and organizations at Thomas Edison! <a href="https://www.taehsjrotc.org/" target="__blank"> JROTC </a> , for instance, is one of the largest citizenship and character development programs, and upholds all our school values.  </p>
+      <br>
+      <p> The Black Student Union is a union very crucial to our school, as it brings love, unity, and awareness for all the black students here.  </p>
+      <br>
+      <p> The Debate Club is a pretty cool club, it allows students to develop and demonstrate their analytical skills and critical thinking skills. </p>
+    <div class="gallery" id="clubsGallery"></div>
+  </section>
+  <section id="courses" style="display: none;">
+    <h2 class="font-effect-neon">CTE Courses</h2>
+    <div class="gallery" id="coursesGallery"></div>
+      <p> Some notable CTE courses include Web/App Development, Automotive Technology, and Robotics/Drone Engineering. These CTE courses allow individuals to have a hands-on experience in crucial fields that can aid one in potential future jobs/careers/etc. Web/App Development, in particular, can teach the student all about coding websites, designing apps, making prototypes, and so much more. </p>
+  </section>
+  <section id="about" style="display: none;">
+    <h2 class="font-effect-neon">About</h2>
+    <p>
+Dear Parents and Students,
+
+Thomas A. Edison is a unique school that offers strong academic and career & technical education programs. We provide a real college and career ready institute. We currently offer 12 innovative C.T.E. programs, which is why we are one of the premier C.T.E. High Schools in New York City. All of our students are provided with the opportunity to obtain a state recognized industry certification in their CTE course of study as well as earn a high school diploma. Therefore, students graduating from our school leave with two diplomas; the High School Diploma validating their academic skills and the Endorsed C.T.E. Diploma validating their industry skills.  
+      </p>
+      <br>
+      <p>
+I am proud to represent Thomas A. Edison C.T.E. High School as the first principal with a C.T.E. background. I am also an alumnus of this great school. I graduated from Thomas A. Edison C.T.E. High School in June of 1993 with a C.T.E. Endorsed Diploma in Information Technology. Upon graduating, I worked the Information Technology industry from 1993 to 1998. In February 1998, I earned my Technical Educational Occupational Certificate from the New York Institute of Technology and became a Computer Maintenance and Repair teacher at Thomas A. Edison C.T.E. High School. From 2008 to 2012, I served as the Assistant Principal of the C.T.E. department at Thomas A. Edison C.T.E. High School and revamped and developed new and innovative C.T.E. programs that were relevant to the current demands of the industry. In September 2012, I became the first alumnus to serve as Principal of Thomas A. Edison C.T.E. High School.
+      </p>
+      <br> 
+      <p>
+
+My alma mater provided me with an excellent education. It also helped me to become a devoted educational leader. I am truly honored to have been chosen as Thomas A. Edison C.T.E. High School’s Principal and I look forward to providing the same opportunities to your child if he or she should decide to attend our school.
+      </p>
+      <br>
+      <p>
+
+Sincerely,
+
+
+
+Moses A. Ojeda
+
+Principal - Class of 1993</p>
+    <div class="gallery" id="aboutGallery"></div>
+  </section>
+  <section id="alumni" style="display: none;">
+    <h2 class="font-effect-neon">Alumni Faculty</h2>
+    <div class="gallery" id="alumniGallery"></div>
+      <p> Some of the Alumni Faculty include the principal himself and Mrs. Cruz! There is a total of 15 alumni who are currently faculty! </p>
+  </section>
+    <h4>
+         <input type="text" onfocus="this.value=''" value="" placeholder="hi" class="newToDo">
+        <button class="addNew"> Enter Anything.</button>
+    </h4>
+
+    <h3> <span class="numTasks"></span></h3>
+    <ul class="toDoList">
+
+    </ul>
+  <footer>
+
+  </footer>
+  <script>
+    const clubsImages = ['https://static.wixstatic.com/media/94da77_679765bd21ab4bc8b6832d18c9cf2b0a~mv2.jpg/v1/fill/w_307,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/94da77_679765bd21ab4bc8b6832d18c9cf2b0a~mv2.jpg', 'https://i0.wp.com/www.theedisonlight.com/wp-content/uploads/2024/01/1.4.24-ARTICLE-ONE-DUE-Jan-4-2024-at-10_23-AM.jpg?resize=372%2C198', 'https://news.fullerton.edu/app/uploads/2022/11/Debate-Team.jpg'];
+    const coursesImages = ['https://d3ui957tjb5bqd.cloudfront.net/uploads/2020/09/25071317/26-ecosystem-of-gadgets.png.png', 'https://www.katebackdrop.com/cdn/shop/files/BH1045743GKateSummerFantasyDollStreetPinkCarBackdropforPhotography.jpg?v=1688699795&width=1000', 'https://t4.ftcdn.net/jpg/05/57/44/97/360_F_557449713_wizezxgKv2T2Mq1nVjkDC3zTqWKLHeHr.jpg'];
+    const aboutImages = ['https://live.staticflickr.com/2899/14121879607_a54ac43723_b.jpg', 'https://pbs.twimg.com/media/F5dhE6BXIAAoQ_k?format=jpg&name=large', 'https://live.staticflickr.com/4315/35337222093_d135410148_h.jpg'];
+    const alumniImages = ['https://www.taehs.org/pics/THOAECTEH_LOGO.gif', 'https://www.taehs.org/pics/THOAECTEH_LOGO.gif', 'https://www.taehs.org/pics/THOAECTEH_LOGO.gif'];
+
+    function populateGallery(sectionId, images) {
+      const gallery = document.getElementById(sectionId + 'Gallery');
+      gallery.innerHTML = '';
+      images.forEach(image => {
+        const img = document.createElement('img');
+        img.src = image;
+        gallery.appendChild(img);
+      });
+    }
+
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      switch (sectionId) {
+        case 'clubs':
+          populateGallery('clubs', clubsImages);
+          break;
+        case 'courses':
+          populateGallery('courses', coursesImages);
+          break;
+        case 'about':
+          populateGallery('about', aboutImages);
+          break;
+        case 'alumni':
+          populateGallery('alumni', alumniImages);
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
